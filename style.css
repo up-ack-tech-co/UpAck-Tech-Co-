@@ -66,6 +66,16 @@ header nav ul li a:hover {
   font-weight: bold;
 }
 
+
+/* Thursday Discount Image */
+.promo-image {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 30px auto 0;
+  border-radius: 10px;
+}
 /* Products */
 .products {
   padding: 50px 20px;
