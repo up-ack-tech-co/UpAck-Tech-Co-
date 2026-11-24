@@ -118,6 +118,21 @@ header nav ul li a:hover {
   background: var(--navy);
 }
 
+/* Category Links */
+.category-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: var(--faded-blue);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.category-link:hover {
+  background: var(--navy);
+}
 /* Footer */
 footer {
   background: var(--navy);
