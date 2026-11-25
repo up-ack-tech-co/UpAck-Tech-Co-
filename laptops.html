@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UpAck Tech Co. | Laptops</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-category="laptops">
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="file_000000003e446243a9d1d703ee7481a4.png" alt="UpAck Tech Logo">
+      <h1>UpAck Tech Co.</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="laptops.html">Laptops</a></li>
+        <li><a href="iphones.html">iPhones</a></li>
+        <li><a href="airpods.html">AirPods</a></li>
+      </ul>
+    </nav>
+  </header>
+    <!-- Laptops Introduction -->
+  <section class="hero">
+    <h2>Explore Our Laptops</h2>
+    <p>Discover quality laptops from trusted brands, including HP, Dell, Lenovo and Acer.</p>
+  </section>
+    <!-- Laptop Catalogue Controls -->
+  <section class="products">
+    <h2>Find Your Laptop</h2>
+
+    <input
+      type="search"
+      id="product-search"
+      placeholder="Search by brand or model..."
+    >
+
+    <div class="catalogue-filters">
+
+      <select id="brand-filter">
+        <option value="">All Brands</option>
+        <option value="HP">HP</option>
+        <option value="Dell">Dell</option>
+        <option value="Lenovo">Lenovo</option>
+        <option value="Acer">Acer</option>
+      </select>
+
+      <select id="price-sort">
+        <option value="high-low">Price: Highest to Lowest</option>
+        <option value="low-high">Price: Lowest to Highest</option>
+        <option value="newest">Newest Arrivals</option>
+      </select>
+
+    </div>
+  </section>
+    <!-- Laptop Product Display -->
+  <section class="products">
+    <h2>Available Laptops</h2>
+
+    <div class="product-grid" id="product-grid">
+
+      <p id="catalogue-message">
+        Our laptop collection will be displayed here.
+        Check back for available products.
+      </p>
+
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
