@@ -133,6 +133,55 @@ header nav ul li a:hover {
 .category-link:hover {
   background: var(--navy);
 }
+/* Laptop Catalogue Controls */
+#product-search {
+  width: 90%;
+  max-width: 500px;
+  padding: 12px;
+  margin: 15px auto;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.catalogue-filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 15px auto;
+}
+
+.catalogue-filters select {
+  padding: 12px;
+  min-width: 180px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+  color: var(--navy);
+  font-size: 14px;
+}
+
+#catalogue-message {
+  width: 100%;
+  text-align: center;
+  color: var(--faded-blue);
+  padding: 25px 10px;
+}
+
+/* Mobile Catalogue Layout */
+@media (max-width: 600px) {
+  .catalogue-filters {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .catalogue-filters select {
+    width: 90%;
+    max-width: 500px;
+  }
+}
 /* Footer */
 footer {
   background: var(--navy);
