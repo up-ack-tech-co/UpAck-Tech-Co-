@@ -81,6 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   searchInput.addEventListener("input", displayLaptops);
   brandFilter.addEventListener("change", displayLaptops);
+  processorFilter.addEventListener("change", displayLaptops);
   priceSort.addEventListener("change", displayLaptops);
 
   displayLaptops();
