@@ -162,6 +162,16 @@ header nav ul li a:hover {
   color: var(--navy);
   font-size: 14px;
 }
+.catalogue-filters input {
+  padding: 12px;
+  min-width: 180px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+  color: var(--navy);
+  font-size: 14px;
+  box-sizing: border-box;
+}
 
 #catalogue-message {
   width: 100%;
@@ -178,6 +188,10 @@ header nav ul li a:hover {
   }
 
   .catalogue-filters select {
+    width: 90%;
+    max-width: 500px;
+  }
+    .catalogue-filters input {
     width: 90%;
     max-width: 500px;
   }
