@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const searchInput = document.getElementById("product-search");
   const brandFilter = document.getElementById("brand-filter");
+  const processorFilter = document.getElementById("processor-filter");
+  const ramFilter = document.getElementById("ram-filter");
   const priceSort = document.getElementById("price-sort");
   const productGrid = document.getElementById("product-grid");
 
@@ -26,6 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const searchTerm = searchInput.value.toLowerCase();
     const selectedBrand = brandFilter.value;
+    const selectedProcessor = processorFilter.val
+    const selectedRAM = ramFilter.value;
     const sortOrder = priceSort.value;
 
     let filteredLaptops = laptops.filter(laptop => {
@@ -37,7 +41,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const matchesBrand =
         selectedBrand === "" || laptop.brand === selectedBrand;
 
-      return matchesSearch && matchesBrand;
+      const matchesProcessor =
+  selectedProcessor === "" || laptop.processor === selectedProcessor;
+
+const matchesRAM =
+  selectedRAM === "" || laptop.ram === selectedRAM;
+
+ return matchesSearch && matchesBrand && matchesProcessor && matchesRAM;
     });
 
     if (sortOrder === "high-low") {
@@ -82,6 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
   searchInput.addEventListener("input", displayLaptops);
   brandFilter.addEventListener("change", displayLaptops);
   processorFilter.addEventListener("change", displayLaptops);
+  ramFilter.addEventListener("change", displayLaptops);
   priceSort.addEventListener("change", displayLaptops);
 
   displayLaptops();
